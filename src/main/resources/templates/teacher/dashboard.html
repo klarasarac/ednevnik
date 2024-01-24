@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nastavnikova Stranica</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h1>Dobrodošli, Nastavnik!</h1>
+    <form th:action="@{/logout}" method="post">
+        <button type="submit" class="btn btn-danger">Odjavi se</button>
+    </form>
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Upravljanje Predmetima</h5>
+            <p class="card-text">Ovdje možete dodati, urediti ili izbrisati predmete.</p>
+            <a href="#" class="btn btn-primary">Uredi Predmete</a>
+        </div>
+    </div>
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Ocjene i Prisustvo</h5>
+            <p class="card-text">Pregled i unos ocjena i evidencija prisustva na predavanjima.</p>
+            <a href="#" class="btn btn-primary">Upravljanje Ocjena</a>
+        </div>
+    </div>
+
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
